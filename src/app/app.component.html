@@ -1,0 +1,16 @@
+<div class="container"  class=" background-color: #f4511e">
+    <div class="row">
+        <div class="col-xl-12">
+            <h2> Mes appariel</h2>
+            <ul class="list-group">
+            <app-appariel  [appareilName] = " appareilOne" [appareilStatus] = "'eteint'"></app-appariel>
+            <app-appariel  [appareilName] = "appareilTwo" [appareilStatus] = "'allumer'"></app-appariel>
+            <app-appariel  [appareilName] = " appareilThree" [appareilStatus] = "'eteint'"></app-appariel>
+            </ul>
+          </div>
+    </div>
+          <button  class="btn btn-success" 
+          [disabled]="!isAuth"
+          (Click)="onAllumer()">Tous afficher</button>   
+          
+</div>
